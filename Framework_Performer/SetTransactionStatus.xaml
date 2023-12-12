@@ -51,7 +51,6 @@
     <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
@@ -65,11 +64,12 @@
       <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
-      <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
@@ -436,7 +436,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="340,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Framework\TakeScreenshot.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="340,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Framework_Performer\TakeScreenshot.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="in_Folder">[in_Config("ExScreenshotsFolderPath").ToString]</InArgument>
                         <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[ScreenshotPath]</InOutArgument>
@@ -556,7 +556,7 @@
                     <InArgument x:TypeArguments="x:Int32">[io_ConsecutiveSystemExceptions+1]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke RetryCurrentTransaction workflow" sap:VirtualizedContainerService.HintSize="610.6666666666666,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Framework/RetryCurrentTransaction.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke RetryCurrentTransaction workflow" sap:VirtualizedContainerService.HintSize="610.6666666666666,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Framework_Performer\RetryCurrentTransaction.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                     <InOutArgument x:TypeArguments="x:Int32" x:Key="io_RetryNumber">[io_RetryNumber]</InOutArgument>
@@ -585,7 +585,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CloseAllApplications workflow" sap:VirtualizedContainerService.HintSize="333.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Framework\CloseAllApplications.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CloseAllApplications workflow" sap:VirtualizedContainerService.HintSize="333.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Framework_Performer\CloseAllApplications.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
@@ -618,7 +618,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke KillAllProcesses workflow" sap:VirtualizedContainerService.HintSize="333.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Framework\KillAllProcesses.xaml">
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke KillAllProcesses workflow" sap:VirtualizedContainerService.HintSize="333.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Framework_Performer\KillAllProcesses.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
                                   <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                 </ui:InvokeWorkflowFile.Arguments>

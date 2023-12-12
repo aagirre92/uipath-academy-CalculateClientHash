@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1111,1043</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1111,918</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetWI5WorkItems_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,7 +111,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetWI5WorkItems" sap:VirtualizedContainerService.HintSize="592,978" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetWI5WorkItems" sap:VirtualizedContainerService.HintSize="592,853" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -120,13 +120,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,867" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7cc3057e-8db2-4334-983a-6a8cade163bd" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,742" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7cc3057e-8db2-4334-983a-6a8cade163bd" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,650" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,525" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dt_Filtered_WI5" />
             </Sequence.Variables>
@@ -157,7 +157,6 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;test&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
