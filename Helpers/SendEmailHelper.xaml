@@ -122,7 +122,7 @@
           <av:Size x:Key="ShapeSize">200,81</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Exception" sap:VirtualizedContainerService.HintSize="716,748" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence DisplayName="Exception" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
         <Sequence.Variables>
           <Variable x:TypeArguments="upr:ILocalResource" Name="Screenshot_ILR" />
           <Variable x:TypeArguments="scg:IEnumerable(upr:IResource)" Name="Attachments_IE" />
@@ -307,13 +307,13 @@
               <av:Size x:Key="ShapeSize">200,81</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Success" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Success" sap:VirtualizedContainerService.HintSize="450,518" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <umam:SendMailConnections AttachmentList="{x:Null}" ConnectionAccountName="{x:Null}" AttachmentInputMode="Existing" Attachments="{x:Null}" AuthScopesInvalid="False" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionId="d0e4369f-e42c-45bf-9f3a-dcec5fbfed8d" ContinueOnError="{x:Null}" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="388,407" sap2010:WorkflowViewState.IdRef="SendMailConnections_4" Importance="[UiPath.MicrosoftOffice365.Activities.Mail.Enums.Importance.High]" InputType="TEXT" Mailbox="{x:Null}" ReplyTo="{x:Null}" SaveAsDraft="False" SingleAttachment="{x:Null}" Subject="[&quot;Process &quot;+ in_Config(&quot;logF_BusinessProcessName_Dispatcher&quot;).ToString +&quot; successfully executed&quot;]" TextBody="[&quot;Hello there,&#xA;&#xA;Dispatcher successfully executed. Bot has added a total of &quot; + in_NumItemsPushed.ToString + &quot; items to queue&#xA;&#xA;Kind regards,&#xA;&#xA;Andoni&#xA;&quot;]" To="[in_Config(&quot;EmailRecipients&quot;).ToString.Split(&quot;;&quot;)]" UseConnectionService="True">
+            <umam:SendMailConnections AttachmentList="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" ConnectionId="d0e4369f-e42c-45bf-9f3a-dcec5fbfed8d" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="388,407" sap2010:WorkflowViewState.IdRef="SendMailConnections_4" Importance="[UiPath.MicrosoftOffice365.Activities.Mail.Enums.Importance.High]" InputType="TEXT" SaveAsDraft="False" Subject="[&quot;Process &quot;+ in_Config(&quot;logF_BusinessProcessName_Dispatcher&quot;).ToString +&quot; successfully executed&quot;]" TextBody="[&quot;Hello there,&#xD;&#xA;&#xD;&#xA;Dispatcher successfully executed. Bot has added a total of &quot; + in_NumItemsPushed.ToString + &quot; items to queue&#xD;&#xA;&#xD;&#xA;Kind regards,&quot;+&quot;&#xD;&#xA;Hostname: &quot; + Environment.MachineName + &quot;&#xD;&#xA;Username: &quot; + System.Security.Principal.WindowsIdentity.GetCurrent().Name.ToString]" To="[in_Config(&quot;EmailRecipients&quot;).ToString.Split(&quot;;&quot;)]" UseConnectionService="True">
               <umam:SendMailConnections.AttachmentsBackup>
                 <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
                   <usau:BackupSlot.BackupValues>

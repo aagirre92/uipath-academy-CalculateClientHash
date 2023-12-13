@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1111,1599</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1111,1780</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PushWorkItemsToQueue_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -101,7 +101,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PushWorkItemsToQueue" sap:VirtualizedContainerService.HintSize="710,1534" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PushWorkItemsToQueue" sap:VirtualizedContainerService.HintSize="710,1715" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="DictCurrentRow" />
     </Sequence.Variables>
@@ -118,7 +118,7 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(Of String,Object)]</InArgument>
       </Assign.Value>
     </Assign>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="648,1301" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="648,1482" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -126,19 +126,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_WorkItemsDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="610,1073" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_WorkItemsDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="610,1254" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
           <ui:ForEachRow.Body>
             <ActivityAction x:TypeArguments="sd:DataRow">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="576,887" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="576,1068" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,799" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,980" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -146,7 +146,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence sap:VirtualizedContainerService.HintSize="496,549" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence sap:VirtualizedContainerService.HintSize="496,730" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -165,6 +165,7 @@
                           <scg:Dictionary x:TypeArguments="x:String, InArgument" />
                         </ui:AddQueueItem.ItemInformation>
                       </ui:AddQueueItem>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Added workitem with WIID=&quot; + CurrentRow(&quot;WIID&quot;).ToString]" />
                       <Assign DisplayName="Assign | Increase counter" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[out_AddedNewWorkItemsCounter]</OutArgument>
