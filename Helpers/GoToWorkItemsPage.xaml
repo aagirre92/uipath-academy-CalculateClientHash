@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1111,1047</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1111,1230</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GoToWorkItemsPage_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -98,36 +98,38 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GoToWorkItemsPage" sap:VirtualizedContainerService.HintSize="1112,982" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GoToWorkItemsPage" sap:VirtualizedContainerService.HintSize="1112,1165" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="1050,871" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5cfb002f-8f15-4d2e-a0a3-a5a9eb028b9d" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="1050,1054" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5cfb002f-8f15-4d2e-a0a3-a5a9eb028b9d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,654" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,837" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <uix:NGoToUrl DisplayName="Go To URL | Work Items" sap:VirtualizedContainerService.HintSize="954,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_Config(&quot;AcmeSys1_URL&quot;).ToString + &quot;/work-items&quot;]" Version="V3" />
-            <uix:NCheckState DisplayName="Check App State '97013266'" sap:VirtualizedContainerService.HintSize="954,417" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5cfb002f-8f15-4d2e-a0a3-a5a9eb028b9d" Version="V3">
+            <uix:NCheckState DisplayName="Check App State '97013266'" sap:VirtualizedContainerService.HintSize="954,600" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5cfb002f-8f15-4d2e-a0a3-a5a9eb028b9d" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,383" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Work Items page ready&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Work Items page ready&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1111,819</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1111,701</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LogOutAndCloseAcmeSys1_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -90,6 +90,7 @@
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="LogOutAndCloseAcmeSys1" sap:VirtualizedContainerService.HintSize="546,636" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -98,7 +99,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="484,525" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="38d16243-283e-4c68-a625-3e52359ca501" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="484,525" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="38d16243-283e-4c68-a625-3e52359ca501" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

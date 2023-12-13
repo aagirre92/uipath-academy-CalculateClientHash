@@ -49,63 +49,63 @@
         "testCaseId": "7e6e34e9-d1bc-4ea6-bb70-dd56a007bc38",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\GetTransactionDataTestCase.xaml"
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "579abc8b-0c83-47b5-9dc5-71125a1eae3f",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\InitAllApplicationsTestCase.xaml"
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "2e1ebeff-7b06-461d-9f69-3bb2b2de42c8",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\InitAllSettingsTestCase.xaml"
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "b8722e52-5ef7-4ea5-8586-bd02637f0445",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\MainTestCase.xaml"
+        "fileName": "Tests\\MainTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "44434b9b-88be-4fd6-9f1a-e04f9eafd922",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\ProcessTestCase.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "6bcc77b9-814c-4598-a294-7123340287c7",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\TC_SendEmail_Exception.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "366f05f1-0aa3-4279-bb3e-513610aa6b1b",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\TC_SendEmail_Success.xaml"
+        "fileName": "Tests\\ProcessTestCase.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "621e206f-cd36-4523-843e-efda5c494964",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\TC_TakeScreenshot.xaml"
+        "fileName": "Tests\\TC_TakeScreenshot.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "13947c17-bfe4-4cac-90ea-20bfcc5b8296",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests_Dispatcher\\WorkFlowTestCaseTemplate.xaml"
+        "fileName": "Tests\\WorkFlowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6bcc77b9-814c-4598-a294-7123340287c7",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\TC_Dispatcher_SendEmailException.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "366f05f1-0aa3-4279-bb3e-513610aa6b1b",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\TC_Dispatcher_SendEmailSuccess.xaml"
       }
     ],
     "modernBehavior": true,

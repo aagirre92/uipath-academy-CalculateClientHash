@@ -102,6 +102,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="LoginToAcmeSys1" sap:VirtualizedContainerService.HintSize="1174,2130" sap2010:WorkflowViewState.IdRef="Sequence_1">

@@ -90,7 +90,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Template workflow used to create tests for workflows in the process.&#xA;Create a new test workflow by copying and renaming this file." DisplayName="Test Template" sap:VirtualizedContainerService.HintSize="512,1424" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Valid for both dispatcher and performer (The take screenshot workflow has no modifications at all)" DisplayName="Test Template" sap:VirtualizedContainerService.HintSize="512,1424" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data." Name="Config" />
       <Variable x:TypeArguments="x:String" Name="Screenshot" />
@@ -139,12 +139,8 @@
       <ui:Comment DisplayName="Actions to be performed" sap:VirtualizedContainerService.HintSize="388,75" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Workflow to be invoked or actions to be performed" />
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework_Dispatcher\TakeScreenshot.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Framework_Dispatcher\TakeScreenshot.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
-            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;ExScreenshotsFolderPath&quot;).ToString" />
-          </InArgument>
-          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">
-            <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Screenshot" />
-          </InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">[Config("ExScreenshotsFolderPath").ToString]</InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[Screenshot]</InOutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>

@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1111,918</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1111,1101</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetWI5WorkItems_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -109,9 +109,10 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetWI5WorkItems" sap:VirtualizedContainerService.HintSize="592,853" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetWI5WorkItems" sap:VirtualizedContainerService.HintSize="592,1036" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -120,13 +121,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,742" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7cc3057e-8db2-4334-983a-6a8cade163bd" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,925" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7cc3057e-8db2-4334-983a-6a8cade163bd" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,525" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,708" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dt_Filtered_WI5" />
             </Sequence.Variables>
@@ -157,6 +158,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Successfully extracted data from table. From &quot; + ExtractDataTable.Rows.Count.ToString + &quot;rows there are WI5 and Open type &quot; + out_DataTable.Rows.Count.ToString + &quot; workitems&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
