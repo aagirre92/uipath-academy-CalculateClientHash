@@ -4,6 +4,7 @@
   "description": "Academy REFramework practice exercise nº 1",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Cryptography.Activities": "[1.4.2]",
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.MicrosoftOffice365.Activities": "[2.4.3]",
     "UiPath.System.Activities": "[23.10.3]",

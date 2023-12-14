@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1419.0000000000002,2775</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1419,2849</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LoginToAcmeSys1_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -107,7 +107,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LoginToAcmeSys1" sap:VirtualizedContainerService.HintSize="1429,2710" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LoginToAcmeSys1" sap:VirtualizedContainerService.HintSize="1429,2784" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -117,42 +117,48 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;AcmeSys1_Credentials&quot;).ToString]" CacheStrategy="None" DisplayName="Get Credential | Get login credentials" FolderPath="[in_Config(&quot;AcmeSys1_Credentials_Folder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="1367,144" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
-    <Sequence DisplayName="Data Validation (username is email)" sap:VirtualizedContainerService.HintSize="1367,473" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;AcmeSys1_Credentials&quot;).ToString]" CacheStrategy="None" DisplayName="Get Credential | Get login credentials" FolderPath="[in_Config(&quot;AcmeSys1_Credentials_Folder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="1367,143" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
+    <Sequence DisplayName="Data Validation (username is email)" sap:VirtualizedContainerService.HintSize="1367,551" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[Not System.Text.RegularExpressions.Regex.IsMatch(Username,&quot;^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$&quot;)]" sap:VirtualizedContainerService.HintSize="410,362" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[Not System.Text.RegularExpressions.Regex.IsMatch(Username,&quot;^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$&quot;)]" sap:VirtualizedContainerService.HintSize="410,440" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Throw Exception="[new Exception(&quot;Username NOT an email!&quot;)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_2" />
+            <Throw Exception="[new Exception(&quot;Username NOT an email!&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_14" />
+          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
         </If.Else>
       </If>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="1367,1902" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="defdd8c5-8dae-4523-bc96-10b7cf9eac9c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="1367,1899" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="defdd8c5-8dae-4523-bc96-10b7cf9eac9c" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1333,1684" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1333,1682" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Log Out'" sap:VirtualizedContainerService.HintSize="1271,1569" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="defdd8c5-8dae-4523-bc96-10b7cf9eac9c" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Log Out'" sap:VirtualizedContainerService.HintSize="1271,1567" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="defdd8c5-8dae-4523-bc96-10b7cf9eac9c" Version="V3">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,383" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
