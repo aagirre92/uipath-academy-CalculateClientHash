@@ -1,0 +1,8 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Helpers\\LoginToAcmeSys1_mock.xaml",
+      "sourceWorkflowPath": "Helpers\\LoginToAcmeSys1.xaml"
+    }
+  ]
+}

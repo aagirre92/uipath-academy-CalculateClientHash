@@ -106,6 +106,34 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\TC_Dispatcher_SendEmailSuccess.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4c8b6553-7254-4edf-9600-93ca05331ad5",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\TC_Dispatcher_SendEmailExceptionIncorrectCredentials.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d0d43c8f-ec28-48ea-9318-617ce439218b",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\TC_LoginAcmeSys1Mock_Successful.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5a6cb891-882e-4c72-8b64-538bf60dd1d9",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\TC_LoginAcmeSys1Mock_IncorrectCredentials.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fa69f0d2-af42-42ec-aae7-277430cee1c9",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\TC_LoginAcmeSys1Mock_IncorrectValidation.xaml"
       }
     ],
     "modernBehavior": true,
